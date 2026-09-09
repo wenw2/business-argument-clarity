@@ -1,2 +1,38 @@
-# business-argument-clarity
-Codex skill for clear, evidence-calibrated academic arguments in business, marketing, and management.
+# 商科学术论证清晰化
+
+`business-argument-clarity` 是面向商科、营销与管理学术写作的 Codex skill，用于识别含糊判断、论证跳跃和没有推进作用的重复表达。
+
+## 适用范围
+
+分析型 essay、案例分析、文献综述和反思作业。按文体与章节任务选择规则，不强迫每段采用同一种论证结构。
+
+## 三种模式
+
+- **Audit／审稿诊断**：准确指出问题并解释原因，默认不附修复方案。
+- **Faithful Edit／保真编辑**：只修改句子表达；结构、推理或实质判断的问题单独报告。
+- **Substantive Calibration／实质校准**：在授权范围内调整结构和论证，披露实质变化。
+
+逻辑闭环是检查标准，不是允许模型自行补齐论证的授权。
+
+## 核心规则
+
+- 按功能判断限定语：功能明确、疑似冗余、信息不足。Hedging 本身不构成冗余。
+- 解释证据、概念或推理缺口，默认不指定补证方法或替代结论。
+- 以 P0–P3 表示问题处理优先级，省略低价值批评，并区分影响与置信度。
+- 区分已据材料核验、仅据作者转述和无法核验，不编造事实或来源。
+
+## 安装与调用
+
+让 Codex 安装本仓库中的 `skills/business-argument-clarity`，或将该目录复制到 `~/.codex/skills/business-argument-clarity`。
+
+安装后，在下一轮对话使用：
+
+```text
+请使用 $business-argument-clarity，以 Audit 模式审核这篇营销案例分析，只指出值得处理的问题并解释原因。
+```
+
+稿件保留原语言，诊断默认使用中文。完整指令见 [SKILL.md](skills/business-argument-clarity/SKILL.md)。
+
+## 验证范围
+
+技能文件通过了结构校验，并进行过小规模虚构案例试用。该结果不代表已经验证真实 essay 的普遍效果、跨模型可靠性或评分提升。
