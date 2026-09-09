@@ -1,0 +1,4 @@
+interface:
+  display_name: "商科学术论证清晰化"
+  short_description: "按商科学术文体审稿、保真润色与实质校准，明确判断边界并暴露逻辑缺口"
+  default_prompt: "请使用 $business-argument-clarity 检查这篇商科学术文章；根据我的要求选择模式，说明逻辑缺口及原因，并遵守相应编辑边界。"
